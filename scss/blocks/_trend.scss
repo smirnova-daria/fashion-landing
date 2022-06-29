@@ -1,0 +1,62 @@
+.trend {
+	background-image: url("../../img/trend.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	margin-bottom: 120px;
+	@media (max-width: 900px) {
+		background-position: 38%;
+		margin-bottom: 80px;
+	}
+	@media (max-width: 560px) {
+		background-size: 200%;
+		background-position: 6% 0;
+	}
+	@media (max-width: 420px) {
+		background: #bfcdd0;
+	}
+	// .trend__content
+	&__content {
+		max-width: 460px;
+		margin-left: auto;
+		min-height: 745px;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		padding-bottom: 100px;
+		@media (max-width: 560px) {
+			min-height: 400px;
+			padding: 20px 0;
+			margin-left: 0;
+		}
+		@media (max-width: 425px) {
+			min-height: auto;
+		}
+	}
+	// .trend__label
+	&__label {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.5;
+		text-transform: uppercase;
+	}
+
+	// .trend__subtitle
+	&__subtitle {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 27px;
+		margin-bottom: 27px;
+	}
+	// .trend__buttons
+	&__buttons {
+		display: flex;
+		li:not(:last-child) {
+			margin-right: 34px;
+		}
+		@media (max-width: 425px) {
+			flex-direction: column;
+			row-gap: 20px;
+		}
+	}
+}

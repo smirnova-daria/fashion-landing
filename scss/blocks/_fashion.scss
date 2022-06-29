@@ -1,0 +1,87 @@
+.fashion {
+	margin-bottom: 120px;
+	@media (max-width: 900px) {
+		margin-bottom: 80px;
+	}
+	// .fashion__title
+	&__title {
+		margin-bottom: 15px;
+	}
+	// .fashion__subtitle
+	&__subtitle {
+		margin-bottom: 65px;
+	}
+	// .fashion__cards
+	&__cards {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 15px;
+		row-gap: 15px;
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+	}
+	// .fashion__card
+	&__card {
+	}
+}
+.women-fashion {
+}
+.container {
+}
+
+.card-fashion {
+	// .card__photo
+	&__photo {
+		margin-bottom: 38px;
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
+			height: 300px;
+			overflow: hidden;
+		}
+		img {
+			transition: 0.3s;
+		}
+	}
+	// .card__title
+	&__title {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 1.5;
+	}
+	// .card__description
+	&__description {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 1.5;
+	}
+	// .card__prices
+	&__prices {
+		display: flex;
+		column-gap: 28px;
+	}
+}
+.old-price {
+	text-decoration: line-through;
+	font-weight: 400;
+}
+.new-price {
+	color: #cf2929;
+	font-weight: 400;
+}
+.link-card {
+	display: block;
+	@media (max-width: 768px) {
+		flex: 0 0 calc(50% - 7.5px);
+	}
+	@media (max-width: 425px) {
+		flex: 0 0 100%;
+	}
+}
+.link-card:hover {
+	& .card-fashion__photo img {
+		filter: brightness(1.2);
+	}
+}

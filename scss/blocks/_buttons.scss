@@ -1,0 +1,17 @@
+.primary-btn {
+	color: #fff;
+	background-color: $base-color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.5;
+	padding: 4px 20px;
+	border: none;
+	transition: 0.3s;
+
+	&:hover {
+		box-shadow: 0 0 10px #777777;
+	}
+}
