@@ -141,7 +141,7 @@
 }
 
 .trend {
-  background-image: url("../../img/trend.png");
+  background-image: url("../img/trend.png");
   background-position: center center;
   background-repeat: no-repeat;
   margin-bottom: 120px;
@@ -670,7 +670,7 @@
 }
 
 .tachen {
-  background-image: url("../../img/tachen.jpg");
+  background-image: url("../img/tachen.jpg");
   background-position: center center;
   background-repeat: no-repeat;
 }
